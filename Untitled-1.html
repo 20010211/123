@@ -8,26 +8,24 @@
 </head>
 <body>
   <script>
-  function bark(name,weight){
-    if (weight>=15){
-      document.writeln("dog wang wang jiao");
-    }else{
-      document.writeln("dog wu wu jiao");
-    }
+  var person=['dd','cc','dc']
+  var land =['bb','pp','bp']
+  var shi =['aa','ee','ae']
+  var p,l,s
+
+  function foo(arr){
+    i = Math.floor(Math.random()*arr.length)
+    console.log(arr[i])
+    
   }
-
-  bark("dd",10);
-  bark("cc",20);
-
-   var arr =[1,4,5,8,'a','g'];
-   document.write("dc:" + arr.lengh + "<br/>");
-   for(var i = 0; i<arr.length; i++){
-     document.write(arr+  "<br/>");
-   }
-
-
-
-
+  foo(person)
+  foo(land)
+  foo(shi)
+ p=Math.floor(Math.random()* person.length)
+ l=Math.floor(Math.random()* land.length)
+ s=Math.floor(Math.random()* shi.length)
+ document.writeln(person[p] +'在'+ land[l] + shi[s])
   </script>
+  
 </body>
 </html>
